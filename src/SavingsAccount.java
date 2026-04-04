@@ -2,6 +2,7 @@ public class SavingsAccount extends BankAccount implements Transferable {
 
 
     public SavingsAccount(int accNo , String owner , double balance){
+
         super(accNo , owner , balance);
     }
 
@@ -23,7 +24,7 @@ public class SavingsAccount extends BankAccount implements Transferable {
         if(target==null || amount<=0) return false;
 
         if(this.withdraw(amount)){
-            target.deposite(amount);
+            target.deposit(amount);
             return true;
         }
         return false;

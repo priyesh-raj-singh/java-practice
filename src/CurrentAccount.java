@@ -17,7 +17,7 @@ public class CurrentAccount extends BankAccount implements Transferable{
     public boolean transfer(BankAccount target , double amount){
         if(target == null || amount<=0) return false;
         if(this.withdraw(amount)){
-            target.deposite(amount);
+            target.deposit(amount);
             return true;
         }
         return false;

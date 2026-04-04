@@ -14,7 +14,7 @@ public abstract class BankAccount {
         this.balance = balance;
     }
 
-    public  double deposite(double amount){
+    public  double deposit(double amount){
         if(amount <= 0){
             throw new IllegalArgumentException("Invalid deposite amount");
         }
